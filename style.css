@@ -94,6 +94,16 @@ li {
   display: flex;
   align-items: center;
   flex-direction: column;
+  height: 10cm;
+}
+.banner5 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 22cm;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
 }
 .banner2 {
   background-color: white;
@@ -154,7 +164,7 @@ li {
   right: 5px;
   top: 5px;
 }
-.seemore {
+.seemore, .Explore{
   content: "See More";
   background: #c1dcdc;
   border: 0;
@@ -166,7 +176,10 @@ li {
   justify-content: space-evenly;
   width: 25%;
 }
-.seemore a {
+.seemore{
+  content: "See More";
+}
+.seemore a, .Explore a {
   color: black;
 }
 .plant-text {
@@ -188,6 +201,75 @@ li {
 }
 .aboutus-element {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
+  width: 25%;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutus-element .background-img {
+  background-color: #c1dcdc;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.category {
+  display: flex;
+}
+.category-contain {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #c1dcdc;
+  align-content: flex-end;
+  justify-content: space-around;
+}
+.category-elements {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.category-contain-img {
+  display: flex;
+  height: 60%;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+}
+.category-contain-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.category-contain-button .Explore{
+    content: "Explore";
+    background: white;
+    border: 0;
+    border-radius: 10px;
+    padding: 15px;
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 25%;
+}
+.img-middle {
+  margin-top: -100px;
+}
+.img-special {
+  margin-top: -275px;
 }
