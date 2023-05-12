@@ -79,6 +79,11 @@ li {
   display: inline;
   padding: 0.5em;
 }
+/*::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+ } 
+ /* make scrollbar transparent */
 
 .banner,
 .article,
@@ -86,8 +91,8 @@ li {
 .banner3,
 .banner4,
 .banner5 {
-  background-color: #efefef;
-  height: 15em;
+  background-color: white;
+  height: 25em;
   margin-bottom: 1em;
 }
 .banner4 {
@@ -100,7 +105,7 @@ li {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 22cm;
+  height: 25cm;
   justify-content: space-between;
   flex-wrap: wrap;
   align-content: center;
@@ -129,6 +134,13 @@ li {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1em;
+}
+.banner3 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 #content .banner1 .column1 h1 {
   height: 128px;
@@ -164,7 +176,8 @@ li {
   right: 5px;
   top: 5px;
 }
-.seemore, .Explore{
+.seemore,
+.Explore {
   content: "See More";
   background: #c1dcdc;
   border: 0;
@@ -176,18 +189,25 @@ li {
   justify-content: space-evenly;
   width: 25%;
 }
-.seemore{
+.seemore {
   content: "See More";
 }
-.seemore a, .Explore a {
+.seemore a,
+.Explore a {
   color: black;
 }
 .plant-text {
   display: flex;
   flex-direction: column;
 }
-.banner4 p {
+.banner4 p,
+.banner5 p,
+.banner4 h1,
+.banner5 h1 {
   text-align: center;
+}
+.banner3 h1 {
+  margin: 25px 40px;
 }
 .aboutus {
   display: flex;
@@ -223,13 +243,13 @@ li {
 }
 .category-contain {
   width: 90%;
-  height: 80%;
+  height: 75%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   background-color: #c1dcdc;
-  align-content: flex-end;
+  align-content: space-around;
   justify-content: space-around;
 }
 .category-elements {
@@ -255,21 +275,68 @@ li {
   align-items: center;
   justify-content: center;
 }
-.category-contain-button .Explore{
-    content: "Explore";
-    background: white;
-    border: 0;
-    border-radius: 10px;
-    padding: 15px;
-    position: static;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 25%;
+.category-contain-button .Explore {
+  content: "Explore";
+  background: white;
+  border: 0;
+  border-radius: 10px;
+  padding: 15px;
+  position: static;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 25%;
 }
 .img-middle {
-  margin-top: -100px;
+  margin-top: 95px;
 }
 .img-special {
-  margin-top: -275px;
+  margin-top: -50px;
+}
+.row {
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  overflow-y: hidden;
+  justify-content: space-between;
+}
+.card {
+  float: left;
+  max-width: 43.333%;
+  padding: 0px 30px;
+  margin-bottom: 2rem;
+  flex-basis: 60.333%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-right: 100px;
+  background-color: #c1dcdc;
+}
+
+.card > img {
+  margin-bottom: 0.75rem;
+  width: 20%;
+  height: 60%;
+}
+
+.card-text {
+  font-size: 120%;
+}
+footer {
+  width: 100%;
+  height: 270px;
+  background-color: #c1dcdc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+footer .column1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-right: 200px;
 }
